@@ -7,11 +7,12 @@ interface CardProps {
     description: string;
     backgroundColor?: string;
     borderRadius?: number;
+    borderColor?: string;
 }
 
-const Card = ({ title, description, backgroundColor = '#f0f0f0', borderRadius = 8 }: CardProps) => {
+const Card = ({ title, description, backgroundColor = '#f0f0f0', borderRadius = 8, borderColor = '#ccc' }: CardProps) => {
     return (
-        <View style={[styles.card, { backgroundColor: backgroundColor, borderRadius: borderRadius}]}>
+        <View style={[styles.card, { backgroundColor: backgroundColor, borderRadius: borderRadius, borderColor: borderColor }]}>
             <View style={styles.header}>
                 <View style={[styles.titlePlaceholder, styles.textPlaceholder]}></View>
             </View>
