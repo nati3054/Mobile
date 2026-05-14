@@ -14,6 +14,6 @@ export async function  adicionarAlunoDB(
    
 }
 
-export async function excluirAlunoDB(db: DB, id: number): Promise<void> {
+export async function removerAlunoDB(db: DB, id: number): Promise<void> {
     await db.runAsync('DELETE FROM alunos WHERE id = ?', [id]);
 }

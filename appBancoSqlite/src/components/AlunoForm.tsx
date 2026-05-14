@@ -21,7 +21,26 @@ export function AlunoForm({nome, email, onChangeNome, onChangeEmail, onSubmit}: 
 }
 
 const styles = StyleSheet.create({
-    input: {},
-    botao: {},
-    botaoTexto: {}
+    input: {
+        borderWidth: 1,
+        borderColor: '#8e8989',
+        borderRadius: 8,
+        padding: 10,
+        marginBottom: 10,
+        fontSize: 16
+    },
+    botao: {
+        backgroundColor: '#640839',
+        padding: 14,
+        borderRadius: 8,
+        alignItems: 'center',
+        marginBottom: 20
+    },
+    botaoTexto: {
+        color: '#f50909',
+        fontWeight: '700',
+        fontSize: 16
+    }
 });
+
+    
